@@ -100,7 +100,7 @@ export default function ContactPage() {
           <Card className="p-8">
             <h2 className="heading-2 mb-6">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+              <input type="hidden" name="access_key" value={import.meta.env.VITE_WEB3FORMS_ACCESS_KEY} />
               <input type="hidden" name="subject" value="New Contact Form Submission - Andora Home Care" />
               <input type="hidden" name="from_name" value="Andora Home Care Website" />
 

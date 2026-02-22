@@ -1,11 +1,9 @@
 import { GraduationCap, Heart, Shield, UserCheck, Award, CheckCircle } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
 import Card from '../components/Card';
 import Button from '../components/Button';
 
 export default function CaregiversPage() {
-  const navigate = useNavigate();
 
   const qualifications = [
     {
