@@ -1,0 +1,109 @@
+import { Heart, Clock, Users, Home, Stethoscope, HandHeart } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import Section from '../components/Section';
+import Card from '../components/Card';
+import Button from '../components/Button';
+
+export default function ServicesPage() {
+  const navigate = useNavigate();
+
+  const services = [
+    {
+      icon: Stethoscope,
+      title: 'Skilled Nursing Care',
+      description: 'Licensed nurses providing medical care, medication management, wound care, and health monitoring in the comfort of your home.',
+      features: ['Medication Administration', 'Wound Care', 'IV Therapy', 'Post-Surgical Care', 'Chronic Disease Management']
+    },
+    {
+      icon: Heart,
+      title: 'Personal Care',
+      description: 'Compassionate assistance with daily living activities to help maintain independence and dignity.',
+      features: ['Bathing & Grooming', 'Dressing Assistance', 'Mobility Support', 'Meal Preparation', 'Light Housekeeping']
+    },
+    {
+      icon: Clock,
+      title: '24/7 Care',
+      description: 'Round-the-clock nursing care for those who need continuous medical supervision and support.',
+      features: ['24-Hour RN Availability', 'Overnight Care', 'Emergency Response', 'Continuous Monitoring', 'Family Communication']
+    },
+    {
+      icon: Users,
+      title: 'Companionship',
+      description: 'Social interaction and emotional support to combat loneliness and promote mental well-being.',
+      features: ['Conversation & Activities', 'Errands & Transportation', 'Social Engagement', 'Hobby Support', 'Reading & Games']
+    },
+    {
+      icon: Home,
+      title: 'Respite Care',
+      description: 'Temporary relief for family caregivers while ensuring continuous quality care for your loved one.',
+      features: ['Flexible Scheduling', 'Short or Long-term', 'Qualified Caregivers', 'Peace of Mind', 'Family Support']
+    },
+    {
+      icon: HandHeart,
+      title: 'Specialized Care',
+      description: 'Expert care for complex medical conditions including dementia, Alzheimer\'s, and chronic illnesses.',
+      features: ['Dementia Care', "Alzheimer's Support", 'Parkinson\'s Care', 'Diabetes Management', 'Cardiac Care']
+    }
+  ];
+
+  return (
+    <>
+      <Section className="bg-gradient-to-br from-blue-50 to-white pt-32 pb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h1 className="heading-1 mb-6">Our Services</h1>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Comprehensive private duty nursing and care services tailored to meet your unique needs. Our experienced team is dedicated to providing the highest quality care in the comfort of your home.
+          </p>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <Card key={index} className="hover:shadow-xl transition-smooth">
+              <div className="bg-primary/10 rounded-full p-4 w-fit mb-6">
+                <service.icon className="text-primary" size={32} />
+              </div>
+              <h3 className="heading-3 mb-4">{service.title}</h3>
+              <p className="text-gray-600 mb-6">{service.description}</p>
+              <ul className="space-y-2">
+                {service.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="text-primary mt-1">✓</span>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section className="bg-gradient-to-br from-primary to-blue-700 text-white">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="heading-2 text-white mb-6">Ready to Get Started?</h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Contact us today for a free consultation and personalized care plan.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              variant="secondary"
+              size="large"
+              onClick={() => window.location.href = 'tel:+18326793716'}
+            >
+              Call (832) 679-3716
+            </Button>
+            <Button
+              variant="outline"
+              size="large"
+              onClick={() => navigate('/contact')}
+              className="bg-white/10 border-white text-white hover:bg-white hover:text-primary"
+            >
+              Schedule Consultation
+            </Button>
+          </div>
+        </div>
+      </Section>
+    </>
+  );
+}
