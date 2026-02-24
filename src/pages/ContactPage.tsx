@@ -41,8 +41,8 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['(832) 679-3716', 'Available 24/7'],
-      action: 'tel:+18326793716'
+      details: ['(346) 202-3538', 'Available 24/7'],
+      action: 'tel:+13462023538'
     },
     {
       icon: Mail,
@@ -172,7 +172,7 @@ export default function ContactPage() {
                   name="phone"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
-                  placeholder="(832) 679-3716"
+                  placeholder="(346) 202-3538"
                 />
               </div>
 
@@ -225,7 +225,7 @@ export default function ContactPage() {
                 variant="primary"
                 fullWidth
                 size="large"
-                onClick={() => window.location.href = 'tel:+18326793716'}
+                onClick={() => window.location.href = 'tel:+13462023538'}
               >
                 Call for Free Consultation
               </Button>
@@ -238,7 +238,7 @@ export default function ContactPage() {
               </p>
               <div className="bg-white/20 rounded-lg p-4 text-center">
                 <Phone className="mx-auto mb-2" size={32} />
-                <p className="text-2xl font-bold">(832) 679-3716</p>
+                <p className="text-2xl font-bold">(346) 202-3538</p>
                 <p className="text-sm text-blue-100 mt-2">Available 24/7/365</p>
               </div>
             </Card>

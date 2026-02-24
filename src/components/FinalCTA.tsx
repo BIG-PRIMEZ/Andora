@@ -17,11 +17,11 @@ export default function FinalCTA() {
             <Button
               variant="cta"
               size="large"
-              onClick={() => window.location.href = 'tel:+18326793716'}
+              onClick={() => window.location.href = 'tel:+13462023538'}
               className="text-lg"
             >
               <Phone className="inline mr-2" size={20} />
-              Call (832) 679-3716
+              Call (346) 202-3538
             </Button>
             <Button
               variant="outline"
@@ -37,7 +37,7 @@ export default function FinalCTA() {
           <div className="border-t border-white/20 pt-8">
             <p className="text-lg mb-2">Available 24 Hours a Day, 7 Days a Week</p>
             <p className="opacity-90">
-              Serving families across Greater Houston with excellence and compassion since 2012
+              Serving families across Greater Houston with excellence and compassion
             </p>
           </div>
         </div>

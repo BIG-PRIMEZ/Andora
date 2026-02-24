@@ -11,10 +11,10 @@ const features = [
 ];
 
 const stats = [
-  { number: '12+', label: 'Years of Excellence' },
-  { number: '1000+', label: 'Families Served' },
-  { number: '50+', label: 'Licensed Caregivers' },
-  { number: '98%', label: 'Client Satisfaction' },
+  { number: '24/7', label: 'Availability' },
+  { number: '100%', label: 'Licensed & Insured' },
+  { number: '5-Star', label: 'Quality Care' },
+  { number: 'RN/LVN', label: 'Certified Staff' },
 ];
 
 export default function WhyChooseUs() {

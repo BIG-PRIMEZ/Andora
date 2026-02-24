@@ -12,37 +12,43 @@ export default function ServicesPage() {
       icon: Stethoscope,
       title: 'Skilled Nursing Care',
       description: 'Licensed nurses providing medical care, medication management, wound care, and health monitoring in the comfort of your home.',
-      features: ['Medication Administration', 'Wound Care', 'IV Therapy', 'Post-Surgical Care', 'Chronic Disease Management']
+      features: ['Medication Administration', 'Wound Care', 'IV Therapy', 'Post-Surgical Care', 'Chronic Disease Management'],
+      image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Heart,
       title: 'Personal Care',
       description: 'Compassionate assistance with daily living activities to help maintain independence and dignity.',
-      features: ['Bathing & Grooming', 'Dressing Assistance', 'Mobility Support', 'Meal Preparation', 'Light Housekeeping']
+      features: ['Bathing & Grooming', 'Dressing Assistance', 'Mobility Support', 'Meal Preparation', 'Light Housekeeping'],
+      image: 'https://images.pexels.com/photos/7551668/pexels-photo-7551668.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Clock,
       title: '24/7 Care',
       description: 'Round-the-clock nursing care for those who need continuous medical supervision and support.',
-      features: ['24-Hour RN Availability', 'Overnight Care', 'Emergency Response', 'Continuous Monitoring', 'Family Communication']
+      features: ['24-Hour RN Availability', 'Overnight Care', 'Emergency Response', 'Continuous Monitoring', 'Family Communication'],
+      image: 'https://images.pexels.com/photos/7551616/pexels-photo-7551616.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Users,
       title: 'Companionship',
       description: 'Social interaction and emotional support to combat loneliness and promote mental well-being.',
-      features: ['Conversation & Activities', 'Errands & Transportation', 'Social Engagement', 'Hobby Support', 'Reading & Games']
+      features: ['Conversation & Activities', 'Errands & Transportation', 'Social Engagement', 'Hobby Support', 'Reading & Games'],
+      image: 'https://images.pexels.com/photos/7551680/pexels-photo-7551680.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Home,
       title: 'Respite Care',
       description: 'Temporary relief for family caregivers while ensuring continuous quality care for your loved one.',
-      features: ['Flexible Scheduling', 'Short or Long-term', 'Qualified Caregivers', 'Peace of Mind', 'Family Support']
+      features: ['Flexible Scheduling', 'Short or Long-term', 'Qualified Caregivers', 'Peace of Mind', 'Family Support'],
+      image: 'https://images.pexels.com/photos/7659573/pexels-photo-7659573.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: HandHeart,
       title: 'Specialized Care',
       description: 'Expert care for complex medical conditions including dementia, Alzheimer\'s, and chronic illnesses.',
-      features: ['Dementia Care', "Alzheimer's Support", 'Parkinson\'s Care', 'Diabetes Management', 'Cardiac Care']
+      features: ['Dementia Care', "Alzheimer's Support", 'Parkinson\'s Care', 'Diabetes Management', 'Cardiac Care'],
+      image: 'https://images.pexels.com/photos/7551664/pexels-photo-7551664.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];
 
@@ -60,8 +66,14 @@ export default function ServicesPage() {
       <Section>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-xl transition-smooth">
-              <div className="bg-primary/10 rounded-full p-4 w-fit mb-6">
+            <Card key={index} className="p-0 overflow-hidden hover:shadow-xl transition-smooth">
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+              <div className="bg-primary/10 rounded-full p-4 w-fit mb-6 -mt-12 relative z-10 border-4 border-white">
                 <service.icon className="text-primary" size={32} />
               </div>
               <h3 className="heading-3 mb-4">{service.title}</h3>
@@ -74,6 +86,7 @@ export default function ServicesPage() {
                   </li>
                 ))}
               </ul>
+              </div>
             </Card>
           ))}
         </div>
@@ -89,9 +102,9 @@ export default function ServicesPage() {
             <Button
               variant="secondary"
               size="large"
-              onClick={() => window.location.href = 'tel:+18326793716'}
+              onClick={() => window.location.href = 'tel:+13462023538'}
             >
-              Call (832) 679-3716
+              Call (346) 202-3538
             </Button>
             <Button
               variant="outline"

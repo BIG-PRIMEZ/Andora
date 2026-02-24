@@ -56,7 +56,7 @@ export default function Header() {
             <Button
               variant="cta"
               size="medium"
-              onClick={() => window.location.href = 'tel:+18326793716'}
+              onClick={() => window.location.href = 'tel:+13462023538'}
               className="hidden md:block"
             >
               Call Now
@@ -88,7 +88,7 @@ export default function Header() {
               <Button
                 variant="cta"
                 fullWidth
-                onClick={() => window.location.href = 'tel:+18326793716'}
+                onClick={() => window.location.href = 'tel:+13462023538'}
               >
                 Call Now
               </Button>

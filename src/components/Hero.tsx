@@ -22,7 +22,7 @@ export default function Hero() {
               <Button
                 variant="cta"
                 size="large"
-                onClick={() => window.location.href = 'tel:+18326793716'}
+                onClick={() => window.location.href = 'tel:+13462023538'}
               >
                 Speak to a Care Specialist
               </Button>
@@ -46,7 +46,7 @@ export default function Hero() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <Award className="text-primary mb-2" size={32} />
-                <p className="text-sm font-semibold text-gray-800">10+ Years Experience</p>
+                <p className="text-sm font-semibold text-gray-800">Experienced Team</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <CheckCircle className="text-primary mb-2" size={32} />
@@ -64,8 +64,8 @@ export default function Hero() {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl hidden md:block">
-              <p className="text-3xl font-bold text-primary">1000+</p>
-              <p className="text-sm text-gray-600">Families Served</p>
+              <p className="text-3xl font-bold text-primary">24/7</p>
+              <p className="text-sm text-gray-600">Care Available</p>
             </div>
           </div>
         </div>

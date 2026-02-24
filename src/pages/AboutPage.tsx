@@ -27,10 +27,10 @@ export default function AboutPage() {
   ];
 
   const stats = [
-    { number: '15+', label: 'Years of Experience' },
-    { number: '500+', label: 'Families Served' },
-    { number: '50+', label: 'Certified Nurses' },
-    { number: '24/7', label: 'Availability' }
+    { number: '24/7', label: 'Availability' },
+    { number: '100%', label: 'Licensed & Insured' },
+    { number: 'RN/LVN', label: 'Certified Staff' },
+    { number: '5-Star', label: 'Quality Care' }
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function AboutPage() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h1 className="heading-1 mb-6">About Andora</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            For over 15 years, we've been Houston's trusted partner in private duty home health care, bringing professional medical care and compassionate support directly to your home.
+            Houston's trusted partner in private duty home health care, bringing professional medical care and compassionate support directly to your home.
           </p>
         </div>
       </Section>
@@ -50,13 +50,13 @@ export default function AboutPage() {
             <h2 className="heading-2 mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Founded in 2010, Andora was born from a simple belief: that exceptional healthcare should be accessible in the comfort and familiarity of home. Our founder, a registered nurse with over 20 years of clinical experience, saw firsthand how home-based care could transform lives.
+                Andora was born from a simple belief: that exceptional healthcare should be accessible in the comfort and familiarity of home. Our founder, a registered nurse with extensive clinical experience, saw firsthand how home-based care could transform lives.
               </p>
               <p>
-                What started as a small team of dedicated nurses has grown into Houston's premier private duty home health service, serving hundreds of families across the greater Houston area. Despite our growth, we've never lost sight of our core mission: providing compassionate, personalized care that treats every client like family.
+                Our team of dedicated nurses and caregivers is committed to making Andora Houston's premier private duty home health service. We are driven by our core mission: providing compassionate, personalized care that treats every client like family.
               </p>
               <p>
-                Today, our team of over 50 certified nurses and caregivers continues to uphold the highest standards of medical excellence while maintaining the warm, personal touch that sets us apart.
+                Our certified nurses and caregivers uphold the highest standards of medical excellence while maintaining the warm, personal touch that sets us apart.
               </p>
             </div>
           </div>
