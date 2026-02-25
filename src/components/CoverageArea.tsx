@@ -24,7 +24,7 @@ export default function CoverageArea() {
           <div className="flex items-center gap-3 mb-4">
             <MapPin className="text-primary" size={36} />
             <h2 className="text-h2 md:text-[42px] text-primary">
-              Proudly Serving Greater Houston
+              Proudly Serving Houston And Surrounding Communities
             </h2>
           </div>
           <p className="text-body text-gray-600 mb-8 leading-relaxed">
@@ -47,10 +47,13 @@ export default function CoverageArea() {
         </div>
 
         <div className="rounded-xl overflow-hidden shadow-2xl">
-          <img
-            src="https://images.pexels.com/photos/2881232/pexels-photo-2881232.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="Houston skyline representing our service area across Greater Houston"
-            className="w-full h-full object-cover"
+          <iframe
+            title="Live map of Houston service area"
+            src="https://www.google.com/maps?q=Houston,TX&output=embed"
+            className="w-full h-[420px] md:h-full min-h-[420px] border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
           />
         </div>
       </div>

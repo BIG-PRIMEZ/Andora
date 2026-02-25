@@ -1,4 +1,4 @@
-import { Award, Heart, Shield, Users, Clock, Star } from 'lucide-react';
+import { Heart, Shield, Users, Star } from 'lucide-react';
 import Section from '../components/Section';
 import Card from '../components/Card';
 
@@ -35,8 +35,11 @@ export default function AboutPage() {
 
   return (
     <>
-      <Section className="bg-gradient-to-br from-blue-50 to-white pt-32 pb-16">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+      <Section
+        className="pt-32 pb-16 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: "url('/Layer%207.png')" }}
+      >
+        <div className="text-center max-w-3xl mx-auto mb-12 bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">About Andora</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Houston's trusted partner in private duty home health care, bringing professional medical care and compassionate support directly to your home.
@@ -90,29 +93,6 @@ export default function AboutPage() {
               <p className="text-gray-600 text-sm">{value.description}</p>
             </Card>
           ))}
-        </div>
-      </Section>
-
-      <Section>
-        <div className="max-w-3xl mx-auto">
-          <h2 className="heading-2 mb-8 text-center">Accreditations & Certifications</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="text-center">
-              <Award className="text-primary mx-auto mb-3" size={40} />
-              <h3 className="font-semibold mb-2">Licensed & Insured</h3>
-              <p className="text-sm text-gray-600">Fully licensed home health agency</p>
-            </Card>
-            <Card className="text-center">
-              <Shield className="text-primary mx-auto mb-3" size={40} />
-              <h3 className="font-semibold mb-2">JCAHO Accredited</h3>
-              <p className="text-sm text-gray-600">Meeting highest quality standards</p>
-            </Card>
-            <Card className="text-center">
-              <Clock className="text-primary mx-auto mb-3" size={40} />
-              <h3 className="font-semibold mb-2">Medicare Certified</h3>
-              <p className="text-sm text-gray-600">Accepting most insurance plans</p>
-            </Card>
-          </div>
         </div>
       </Section>
     </>

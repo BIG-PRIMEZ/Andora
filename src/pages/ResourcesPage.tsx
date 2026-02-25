@@ -127,8 +127,11 @@ export default function ResourcesPage() {
 
   return (
     <>
-      <Section className="bg-gradient-to-br from-blue-50 to-white pt-32 pb-16">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+      <Section
+        className="pt-32 pb-16 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: "url('/Layer%207.png')" }}
+      >
+        <div className="text-center max-w-3xl mx-auto mb-12 bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Resources & Support</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Access helpful guides, videos, and tools to support your healthcare journey. We're committed to empowering families with knowledge and resources.

@@ -13,7 +13,7 @@ export default function ServicesPage() {
       title: 'Skilled Nursing Care',
       description: 'Licensed nurses providing medical care, medication management, wound care, and health monitoring in the comfort of your home.',
       features: ['Medication Administration', 'Wound Care', 'IV Therapy', 'Post-Surgical Care', 'Chronic Disease Management'],
-      image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/public/Layer 9.png'
     },
     {
       icon: Heart,
@@ -54,8 +54,11 @@ export default function ServicesPage() {
 
   return (
     <>
-      <Section className="bg-gradient-to-br from-blue-50 to-white pt-32 pb-16">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+      <Section
+        className="pt-32 pb-16 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: "url('/Layer%207.png')" }}
+      >
+        <div className="text-center max-w-3xl mx-auto mb-12 bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Our Services</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Comprehensive private duty nursing and care services tailored to meet your unique needs. Our experienced team is dedicated to providing the highest quality care in the comfort of your home.
