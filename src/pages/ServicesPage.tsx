@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
 import Card from '../components/Card';
 import Button from '../components/Button';
+import FAQ from '../components/FAQ';
 
 export default function ServicesPage() {
   const navigate = useNavigate();
@@ -94,6 +95,8 @@ export default function ServicesPage() {
           ))}
         </div>
       </Section>
+
+      <FAQ />
 
       <Section className="bg-gradient-to-br from-primary to-blue-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
