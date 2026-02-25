@@ -47,8 +47,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: 'Email',
-      details: ['Evajuraa01@gmail.com', 'Response within 24 hours'],
-      action: 'mailto:Evajuraa01@gmail.com'
+      details: ['Privatecare@andorahealth.com', 'Response within 24 hours'],
+      action: 'mailto:Privatecare@andorahealth.com'
     },
     {
       icon: MapPin,

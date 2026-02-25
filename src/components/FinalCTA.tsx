@@ -27,7 +27,7 @@ export default function FinalCTA() {
               variant="outline"
               size="large"
               className="bg-white text-primary hover:bg-gray-100 border-white text-lg"
-              onClick={() => window.location.href = 'mailto:Evajuraa01@gmail.com'}
+              onClick={() => window.location.href = 'mailto:Privatecare@andorahealth.com'}
             >
               <Mail className="inline mr-2" size={20} />
               Email Us
