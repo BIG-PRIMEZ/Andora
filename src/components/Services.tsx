@@ -7,7 +7,7 @@ const services = [
     icon: Stethoscope,
     title: 'Skilled Nursing Care',
     description: 'Licensed nurses providing medical care, wound care, medication management, and vital sign monitoring.',
-    image: '/public/Layer 9.png',
+    image: '/Layer 9.png',
   },
   {
     icon: Activity,

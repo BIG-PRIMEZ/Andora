@@ -13,7 +13,7 @@ export default function ServicesPage() {
       title: 'Skilled Nursing Care',
       description: 'Licensed nurses providing medical care, medication management, wound care, and health monitoring in the comfort of your home.',
       features: ['Medication Administration', 'Wound Care', 'IV Therapy', 'Post-Surgical Care', 'Chronic Disease Management'],
-      image: '/public/Layer 9.png'
+      image: '/Layer 9.png'
     },
     {
       icon: Heart,

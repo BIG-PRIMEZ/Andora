@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/7551662/pexels-photo-7551662.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/IMG_2596.JPG"
                 alt="Compassionate nurse providing care to elderly patient in comfortable home setting"
                 className="w-full h-full object-cover"
               />

@@ -75,10 +75,6 @@ export default function ResourcesPage() {
       answer: 'Home healthcare is ideal if you or a loved one needs medical care, assistance with daily activities, or companionship but prefers to remain at home. Our team can assess your needs during a free consultation.'
     },
     {
-      question: 'Is home healthcare covered by insurance?',
-      answer: 'Many insurance plans, including Medicare and Medicaid, cover home healthcare services when medically necessary. We work with most major insurance providers and can help verify your coverage.'
-    },
-    {
       question: 'How quickly can care start?',
       answer: 'We understand that care needs can be urgent. In many cases, we can arrange for care to begin within 24-48 hours of your initial consultation.'
     },
