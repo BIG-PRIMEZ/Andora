@@ -25,7 +25,7 @@ const services = [
     icon: Users,
     title: 'Companion Care',
     description: 'Compassionate companionship, assistance with daily activities, and emotional support.',
-    image: 'https://images.pexels.com/photos/7551680/pexels-photo-7551680.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Layer 10.jpeg',
   },
   {
     icon: Home,
@@ -37,7 +37,7 @@ const services = [
     icon: Pill,
     title: 'Medication Management',
     description: 'Ensuring proper medication administration and monitoring for side effects.',
-    image: 'https://images.pexels.com/photos/7551664/pexels-photo-7551664.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Layer13.jpeg',
   },
 ];
 

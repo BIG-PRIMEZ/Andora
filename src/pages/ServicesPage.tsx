@@ -35,7 +35,7 @@ export default function ServicesPage() {
       title: 'Companionship',
       description: 'Social interaction and emotional support to combat loneliness and promote mental well-being.',
       features: ['Conversation & Activities', 'Errands & Transportation', 'Social Engagement', 'Hobby Support', 'Reading & Games'],
-      image: 'https://images.pexels.com/photos/7551680/pexels-photo-7551680.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/Layer 10.jpeg'
     },
     {
       icon: Home,
@@ -56,10 +56,10 @@ export default function ServicesPage() {
   return (
     <>
       <Section
-        className="pt-32 pb-16 bg-center bg-cover bg-no-repeat"
-        style={{ backgroundImage: "url('/Layer%207.png')" }}
+        className="pt-44 pb-24 bg-cover bg-no-repeat min-h-[500px] flex items-center"
+        style={{ backgroundImage: "url('/Layer11.jpeg')", backgroundPosition: 'center 20%' }}
       >
-        <div className="text-center max-w-3xl mx-auto mb-12 bg-white/80 backdrop-blur-sm rounded-2xl p-8">
+        <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Our Services</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Comprehensive private duty nursing and care services tailored to meet your unique needs. Our experienced team is dedicated to providing the highest quality care in the comfort of your home.

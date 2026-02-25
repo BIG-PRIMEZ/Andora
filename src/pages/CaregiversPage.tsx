@@ -31,23 +31,23 @@ export default function CaregiversPage() {
   const process = [
     {
       step: '1',
-      title: 'Rigorous Selection',
-      description: 'Only the top 10% of applicants join our team after extensive interviews and skill assessments.'
+      title: 'Structured Screening',
+      description: 'A multi-step interview process, background verification, and clinical skill validation before joining our team.'
     },
     {
       step: '2',
-      title: 'Comprehensive Training',
-      description: 'Ongoing education in the latest care techniques, safety protocols, and technology.'
+      title: 'Ongoing Training',
+      description: 'Continued education in safety protocols, evolving care techniques, and professionalism to maintain high standards in every home.'
     },
     {
       step: '3',
-      title: 'Careful Matching',
-      description: 'We match caregivers to clients based on needs, personality, and care requirements.'
+      title: 'Thoughtful Matching',
+      description: 'Caregivers are carefully paired based on clinical needs, personality fit, household dynamics, and long-term stability.'
     },
     {
       step: '4',
-      title: 'Continuous Support',
-      description: 'Regular supervision, feedback, and professional development opportunities.'
+      title: 'Active Oversight',
+      description: 'Regular RN supervision, performance evaluations, and direct communication to ensure consistent quality of care.'
     }
   ];
 
@@ -63,10 +63,10 @@ export default function CaregiversPage() {
   return (
     <>
       <Section
-        className="pt-32 pb-16 bg-center bg-cover bg-no-repeat"
-        style={{ backgroundImage: "url('/Layer%207.png')" }}
+        className="pt-44 pb-24 bg-cover bg-no-repeat min-h-[500px] flex items-center"
+        style={{ backgroundImage: "url('/Layer11.jpeg')", backgroundPosition: 'center 20%' }}
       >
-        <div className="text-center max-w-3xl mx-auto mb-12 bg-white/80 backdrop-blur-sm rounded-2xl p-8">
+        <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Our Caregivers</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Meet the heart of Andora. Our team of dedicated nurses and caregivers are the finest professionals in home healthcare, chosen for their expertise, compassion, and commitment to excellence.

@@ -10,11 +10,6 @@ export default function ResourcesPage() {
       category: 'Getting Started'
     },
     {
-      title: 'Medicare & Insurance Coverage',
-      description: 'Navigate insurance coverage for home healthcare services, including Medicare, Medicaid, and private insurance.',
-      category: 'Financial'
-    },
-    {
       title: 'Caring for Someone with Dementia',
       description: 'Expert tips and strategies for providing safe, compassionate care for loved ones with dementia or Alzheimer\'s.',
       category: 'Caregiving Tips'
@@ -124,10 +119,10 @@ export default function ResourcesPage() {
   return (
     <>
       <Section
-        className="pt-32 pb-16 bg-center bg-cover bg-no-repeat"
-        style={{ backgroundImage: "url('/Layer%207.png')" }}
+        className="pt-44 pb-24 bg-cover bg-no-repeat min-h-[500px] flex items-center"
+        style={{ backgroundImage: "url('/Layer11.jpeg')", backgroundPosition: 'center 20%' }}
       >
-        <div className="text-center max-w-3xl mx-auto mb-12 bg-white/80 backdrop-blur-sm rounded-2xl p-8">
+        <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Resources & Support</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Access helpful guides, videos, and tools to support your healthcare journey. We're committed to empowering families with knowledge and resources.

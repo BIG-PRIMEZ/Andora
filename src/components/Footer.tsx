@@ -61,7 +61,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>5444 Westheimer Rd, Suite 1000<br />Houston, TX 77056</span>
+                <span>5718 Westheimer Rd, Suite 1000<br />Houston, TX 77057</span>
               </li>
             </ul>
 
@@ -90,7 +90,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="mt-4 text-xs text-gray-500">
-            Licensed Home Health Agency | License #123456 | Bonded & Insured
+            Licensed Home Health Agency | Bonded & Insured
           </p>
         </div>
       </div>

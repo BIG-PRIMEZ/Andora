@@ -53,7 +53,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: 'Address',
-      details: ['5444 Westheimer Rd, Suite 1000', 'Houston, TX 77056'],
+      details: ['5718 Westheimer Rd, Suite 1000', 'Houston, TX 77057'],
       action: null
     },
     {
@@ -67,10 +67,10 @@ export default function ContactPage() {
   return (
     <>
       <Section
-        className="pt-32 pb-16 bg-center bg-cover bg-no-repeat"
-        style={{ backgroundImage: "url('/Layer%207.png')" }}
+        className="pt-44 pb-24 bg-cover bg-no-repeat min-h-[500px] flex items-center"
+        style={{ backgroundImage: "url('/Layer11.jpeg')", backgroundPosition: 'center 20%' }}
       >
-        <div className="text-center max-w-3xl mx-auto mb-12 bg-white/80 backdrop-blur-sm rounded-2xl p-8">
+        <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Contact Us</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             We're here to answer your questions and help you get started with the care you need. Reach out today for a free consultation.

@@ -21,7 +21,7 @@ export default function UtilityBar() {
 
           <div className="flex items-center gap-2">
             <MapPin size={18} />
-            <span>Serving Greater Houston</span>
+            <span>Serving Houston and Surrounding Communities</span>
           </div>
         </div>
       </div>
