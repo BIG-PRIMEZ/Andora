@@ -13,7 +13,7 @@ const services = [
     icon: Activity,
     title: 'Post-Surgical Care',
     description: 'Specialized recovery support following hospital discharge, ensuring safe healing at home.',
-    image: 'https://images.pexels.com/photos/7659573/pexels-photo-7659573.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/IMG_2598.JPG',
   },
   {
     icon: Heart,

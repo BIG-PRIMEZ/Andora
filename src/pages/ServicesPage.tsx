@@ -20,7 +20,7 @@ export default function ServicesPage() {
       title: 'Personal Care',
       description: 'Compassionate assistance with daily living activities to help maintain independence and dignity.',
       features: ['Bathing & Grooming', 'Dressing Assistance', 'Mobility Support', 'Meal Preparation', 'Light Housekeeping'],
-      image: 'https://images.pexels.com/photos/7551668/pexels-photo-7551668.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/IMG_2598.JPG'
     },
     {
       icon: Clock,
@@ -41,7 +41,7 @@ export default function ServicesPage() {
       title: 'Respite Care',
       description: 'Temporary relief for family caregivers while ensuring continuous quality care for your loved one.',
       features: ['Flexible Scheduling', 'Short or Long-term', 'Qualified Caregivers', 'Peace of Mind', 'Family Support'],
-      image: 'https://images.pexels.com/photos/7659573/pexels-photo-7659573.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/Layer 8.png'
     },
     {
       icon: HandHeart,
