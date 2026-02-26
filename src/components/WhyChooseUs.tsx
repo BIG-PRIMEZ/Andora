@@ -2,17 +2,31 @@ import { CheckCircle2 } from 'lucide-react';
 import Section from './Section';
 
 const features = [
-  'All caregivers are licensed, bonded, and insured',
-  'Comprehensive background checks and drug screening',
-  'Personalized care plans tailored to individual needs',
-  'Ongoing training and professional development',
-  'Flexible scheduling including 24/7 availability',
-  'Direct communication with nursing supervisors',
+  {
+    title: 'Thoughtfully selected caregivers with consistent support',
+    description: 'Every member of our team is chosen through a careful screening process and supported by clear standards of care.'
+  },
+  {
+    title: 'Personalized care plans tailored to individual needs',
+    description: 'Care is customized based on clinical needs, routines, and personal preferences, not one-size-fits-all schedules.'
+  },
+  {
+    title: 'Direct communication and ongoing oversight',
+    description: 'Families receive consistent updates and clear points of contact to ensure continuity and peace of mind.'
+  },
+  {
+    title: 'Ongoing training and quality review',
+    description: 'We prioritize continuous education and regular quality checks to maintain high standards over time.'
+  },
+  {
+    title: 'Consistent care you can rely on',
+    description: 'We provide dependable support designed to maintain stability, comfort, and continuity at home.'
+  },
 ];
 
 const stats = [
   { number: '24/7', label: 'Availability' },
-  { number: '100%', label: 'Licensed & Insured' },
+  { number: '100%', label: 'State-Licensed Provider' },
   { number: '5-Star', label: 'Quality Care' },
   { number: 'RN/LVN', label: 'Certified Staff' },
 ];
@@ -29,11 +43,14 @@ export default function WhyChooseUs() {
             We understand that choosing a care provider is one of the most important decisions you'll make. Our commitment to excellence, compassion, and professionalism has made us Houston's trusted partner in home healthcare.
           </p>
 
-          <div className="space-y-4">
+          <div className="space-y-5">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-3">
                 <CheckCircle2 className="text-care flex-shrink-0 mt-1" size={24} />
-                <p className="text-gray-700">{feature}</p>
+                <div>
+                  <p className="text-gray-900 font-semibold">{feature.title}</p>
+                  <p className="text-gray-600 text-sm mt-1">{feature.description}</p>
+                </div>
               </div>
             ))}
           </div>

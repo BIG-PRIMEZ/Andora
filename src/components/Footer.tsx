@@ -90,7 +90,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="mt-4 text-xs text-gray-500">
-            Licensed Home Health Agency | Bonded & Insured
+            Licensed Home Health Agency | State-Licensed Provider
           </p>
         </div>
       </div>

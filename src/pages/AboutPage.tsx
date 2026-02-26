@@ -28,7 +28,7 @@ export default function AboutPage() {
 
   const stats = [
     { number: '24/7', label: 'Availability' },
-    { number: '100%', label: 'Licensed & Insured' },
+    { number: '100%', label: 'State-Licensed Provider' },
     { number: 'RN/LVN', label: 'Certified Staff' },
     { number: '5-Star', label: 'Quality Care' }
   ];

@@ -15,7 +15,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-body text-gray-700 leading-relaxed">
-              Andora delivers compassionate, professional care tailored to your loved ones' unique needs. Licensed nurses providing round-the-clock support in the comfort of home.
+              At Andora, private duty care is handled with intention and attention to detail. Our approach prioritizes consistency, clear communication, and dependable support that families can rely on day to day.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -38,7 +38,7 @@ export default function Hero() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-gray-200">
               <div className="flex flex-col items-center text-center">
                 <Shield className="text-primary mb-2" size={32} />
-                <p className="text-sm font-semibold text-gray-800">Licensed & Insured</p>
+                <p className="text-sm font-semibold text-gray-800">State-Licensed Provider</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <Clock className="text-primary mb-2" size={32} />
