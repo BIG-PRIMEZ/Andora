@@ -25,10 +25,10 @@ const features = [
 ];
 
 const stats = [
-  { number: '24/7', label: 'Availability' },
-  { number: '100%', label: 'State-Licensed Provider' },
-  { number: '5-Star', label: 'Quality Care' },
-  { number: 'RN/LVN', label: 'Certified Staff' },
+  { number: '24/7', label: 'Care Availability' },
+  { number: 'State-Licensed', label: 'Home Care Provider' },
+  { number: 'RN-Led', label: 'Clinical Oversight' },
+  { number: '5-Star', label: 'Family-Rated Care' },
 ];
 
 export default function WhyChooseUs() {

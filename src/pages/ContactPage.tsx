@@ -59,7 +59,7 @@ export default function ContactPage() {
     {
       icon: Clock,
       title: 'Office Hours',
-      details: ['Mon-Fri: 8:00 AM - 6:00 PM', 'Sat-Sun: On-call support'],
+      details: ['Mon-Fri: 8:00 AM - 5:00 PM', 'Sat-Sun: On-call support'],
       action: null
     }
   ];
@@ -67,7 +67,7 @@ export default function ContactPage() {
   return (
     <>
       <Section
-        className="pt-44 pb-24 bg-cover bg-no-repeat min-h-[500px] flex items-center"
+        className="pt-24 pb-8 bg-gradient-to-br from-blue-50 to-white"
       >
         <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Contact Us</h1>

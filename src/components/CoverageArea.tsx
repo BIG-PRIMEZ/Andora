@@ -3,17 +3,19 @@ import Section from './Section';
 
 const areas = [
   'Downtown Houston',
-  'The Woodlands',
+  'Texas Medical Center (TMC)',
+  'Heights',
+  'River Oaks',
+  'West University',
+  'Bellaire',
+  'Memorial',
+  'Energy Corridor',
+  'Katy',
   'Sugar Land',
   'Pearland',
-  'Katy',
-  'Spring',
   'Cypress',
-  'Memorial',
-  'River Oaks',
-  'Bellaire',
-  'West University',
-  'Heights',
+  'Spring',
+  'The Woodlands',
 ];
 
 export default function CoverageArea() {

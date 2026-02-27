@@ -56,12 +56,12 @@ export default function ServicesPage() {
   return (
     <>
       <Section
-        className="pt-44 pb-24 bg-cover bg-no-repeat min-h-[500px] flex items-center"
+        className="pt-24 pb-8 bg-cover bg-no-repeat min-h-[400px] flex items-center"
         style={{ backgroundImage: "url('/Layer11.jpeg')", backgroundPosition: 'center 20%' }}
       >
-        <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
-          <h1 className="heading-1 mb-6">Our Services</h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+        <div className="text-center max-w-3xl mx-auto p-8">
+          <h1 className="heading-1 mb-6 text-white font-bold drop-shadow-lg">Our Services</h1>
+          <p className="text-xl text-white font-semibold leading-relaxed drop-shadow-lg">
             Comprehensive private duty nursing and care services tailored to meet your unique needs. Our experienced team is dedicated to providing the highest quality care in the comfort of your home.
           </p>
         </div>

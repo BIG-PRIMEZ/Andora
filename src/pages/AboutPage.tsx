@@ -27,17 +27,16 @@ export default function AboutPage() {
   ];
 
   const stats = [
-    { number: '24/7', label: 'Availability' },
-    { number: '100%', label: 'State-Licensed Provider' },
-    { number: 'RN/LVN', label: 'Certified Staff' },
-    { number: '5-Star', label: 'Quality Care' }
+    { number: '24/7', label: 'Care Availability' },
+    { number: 'State-Licensed', label: 'Home Care Provider' },
+    { number: 'RN-Led', label: 'Clinical Oversight' },
+    { number: '5-Star', label: 'Family-Rated Care' }
   ];
 
   return (
     <>
       <Section
-        className="pt-44 pb-24 bg-cover bg-no-repeat min-h-[500px] flex items-center"
-        
+        className="pt-24 pb-8 bg-gradient-to-br from-blue-50 to-white"
       >
         <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">About Andora</h1>
