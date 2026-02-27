@@ -52,13 +52,13 @@ export default function AboutPage() {
             <h2 className="heading-2 mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Andora was born from a simple belief: that exceptional healthcare should be accessible in the comfort and familiarity of home. Our founder, a registered nurse with extensive clinical experience, saw firsthand how home-based care could transform lives.
+                Andora was founded by a registered nurse who witnessed firsthand the gap between hospital-level expertise and the support families receive once they return home. After years on the front lines of patient care, our founder saw how continuity, oversight, and communication directly impact outcomes and created Andora to close that gap.
               </p>
               <p>
-                Our team of dedicated nurses and caregivers is committed to making Andora Houston's premier private duty home health service. We are driven by our core mission: providing compassionate, personalized care that treats every client like family.
+                We provide RN-led private duty care built on structure, transparency, and dependable coordination. Our model bridges clinical knowledge with personalized in-home support, ensuring every care plan is intentional, clearly communicated, and thoughtfully executed.
               </p>
               <p>
-                Our certified nurses and caregivers uphold the highest standards of medical excellence while maintaining the warm, personal touch that sets us apart.
+                At Andora, we operate with professionalism, discretion, and careful attention to detail, delivering care that prioritizes safety, dignity, and long-term stability at home.
               </p>
             </div>
           </div>
