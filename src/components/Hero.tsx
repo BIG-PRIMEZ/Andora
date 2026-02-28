@@ -9,7 +9,7 @@ export default function Hero() {
     <section
       id="home"
       className="relative bg-cover bg-no-repeat py-20 md:py-32"
-      style={{ backgroundImage: "url('/Layer12.jpeg')", backgroundPosition: 'center 20%' }}
+      style={{ backgroundImage: "url('/hero-bg.jpeg')", backgroundPosition: 'center 20%' }}
     >
       <div className="absolute inset-0 bg-black/50" />
       <div className="container-custom relative z-10">
