@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
                 key={index}
                 className="bg-gradient-to-br from-primary to-primary-dark text-white p-8 rounded-xl text-center shadow-lg"
               >
-                <p className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</p>
+                <p className="text-2xl md:text-3xl font-bold mb-2">{stat.number}</p>
                 <p className="text-sm md:text-base opacity-90">{stat.label}</p>
               </div>
             ))}

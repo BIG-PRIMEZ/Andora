@@ -58,13 +58,6 @@ export default function CareProcess() {
         })}
       </div>
 
-      <div className="mt-12 md:hidden">
-        <div className="flex flex-col items-center gap-4">
-          {[0, 1].map((i) => (
-            <div key={i} className="w-0.5 h-12 bg-gradient-to-b from-primary to-secondary" />
-          ))}
-        </div>
-      </div>
     </Section>
   );
 }
