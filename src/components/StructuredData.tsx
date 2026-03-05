@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 export function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'HomeHealthCareService',
+    '@type': 'MedicalBusiness',
     name: 'Andora Home Care',
     url: 'https://www.andorahealth.com',
     logo: 'https://www.andorahealth.com/Andora_BlackLogo_Variant_PNG@14x.png',
