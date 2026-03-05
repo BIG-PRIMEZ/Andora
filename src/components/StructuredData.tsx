@@ -35,15 +35,25 @@ export function LocalBusinessSchema() {
       name: 'Houston',
       sameAs: 'https://en.wikipedia.org/wiki/Houston',
     },
-    serviceType: [
-      'Private Duty Nursing',
-      'Skilled Nursing Care',
-      'Personal Care',
-      '24/7 Home Care',
-      'Companionship',
-      'Respite Care',
-      'Dementia Care',
-    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Home Care Services',
+      itemListElement: [
+        'Private Duty Nursing',
+        'Skilled Nursing Care',
+        'Personal Care',
+        '24/7 Home Care',
+        'Companionship',
+        'Respite Care',
+        'Dementia Care',
+      ].map((service) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: service,
+        },
+      })),
+    },
     description:
       'Licensed private duty nursing and 24-hour home care in Houston. Professional, compassionate caregivers providing skilled nursing, companion care, and personal care services.',
   };
