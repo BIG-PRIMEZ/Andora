@@ -74,6 +74,7 @@ export default function WhyChooseUs() {
               src="https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Professional healthcare team ready to provide compassionate care"
               className="w-full h-64 object-cover"
+              loading="lazy"
             />
           </div>
         </div>

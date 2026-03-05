@@ -1,6 +1,8 @@
 import { BookOpen, FileText, Video, HelpCircle, Download, ExternalLink } from 'lucide-react';
 import Section from '../components/Section';
 import Card from '../components/Card';
+import SEO from '../components/SEO';
+import { FAQPageSchema } from '../components/StructuredData';
 
 export default function ResourcesPage() {
   const guides = [
@@ -118,6 +120,12 @@ export default function ResourcesPage() {
 
   return (
     <>
+      <SEO
+        title="Home Care Resources & FAQs | Andora Home Care"
+        description="Helpful guides and frequently asked questions about home healthcare services in Houston. Expert resources for families and caregivers from Andora Home Care."
+        canonical="/resources"
+      />
+      <FAQPageSchema faqs={faqs} />
       <Section
         className="pt-24 pb-8 bg-gradient-to-br from-blue-50 to-white"
       >

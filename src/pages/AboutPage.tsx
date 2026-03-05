@@ -1,6 +1,7 @@
 import { Heart, Shield, Users, Star } from 'lucide-react';
 import Section from '../components/Section';
 import Card from '../components/Card';
+import SEO from '../components/SEO';
 
 export default function AboutPage() {
   const values = [
@@ -35,6 +36,11 @@ export default function AboutPage() {
 
   return (
     <>
+      <SEO
+        title="About Andora | RN-Led Private Duty Home Care in Houston"
+        description="Houston's trusted RN-led private duty home health care provider. Founded by a registered nurse to bridge hospital-level expertise with compassionate in-home support."
+        canonical="/about"
+      />
       <Section
         className="pt-24 pb-8 bg-gradient-to-br from-blue-50 to-white"
       >

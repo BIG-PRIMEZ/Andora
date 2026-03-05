@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, AlertCircle } from 'lucide-rea
 import Section from '../components/Section';
 import Card from '../components/Card';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -66,6 +67,11 @@ export default function ContactPage() {
 
   return (
     <>
+      <SEO
+        title="Contact Andora Home Care | Free Consultation in Houston"
+        description="Call (346) 202-3538 or visit 5718 Westheimer Rd, Suite 1000, Houston, TX 77057. Free consultations available for private duty nursing and home care services."
+        canonical="/contact"
+      />
       <Section
         className="pt-24 pb-8 bg-gradient-to-br from-blue-50 to-white"
       >

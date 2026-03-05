@@ -4,6 +4,7 @@ import Section from '../components/Section';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import FAQ from '../components/FAQ';
+import SEO from '../components/SEO';
 
 export default function ServicesPage() {
   const navigate = useNavigate();
@@ -55,6 +56,11 @@ export default function ServicesPage() {
 
   return (
     <>
+      <SEO
+        title="Home Care Services in Houston | Andora Home Care"
+        description="Skilled nursing, personal care, 24/7 care, companionship, respite, and specialized care services in Houston. Tailored private duty nursing for your unique needs."
+        canonical="/services"
+      />
       <Section
         className="pt-52 pb-36 bg-cover bg-no-repeat min-h-[650px] flex items-center relative"
         style={{ backgroundImage: "url('/Layer11.jpeg')", backgroundPosition: 'center 20%' }}
@@ -76,6 +82,7 @@ export default function ServicesPage() {
                 src={service.image}
                 alt={service.title}
                 className="w-full h-48 object-cover"
+                loading="lazy"
               />
               <div className="p-6">
               <div className="bg-primary/10 rounded-full p-4 w-fit mb-6 -mt-12 relative z-10 border-4 border-white">

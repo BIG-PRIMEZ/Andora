@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Section from './Section';
 import Button from './Button';
 
-const faqs = [
+export const faqs = [
   {
     question: 'How do I know if I need home healthcare?',
     answer: 'Home healthcare is ideal if you or a loved one needs medical care, assistance with daily activities, or companionship but prefers to remain at home. Our team can assess your needs during a free consultation.'

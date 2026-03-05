@@ -2,6 +2,7 @@ import { GraduationCap, Heart, Shield, UserCheck, Award, CheckCircle } from 'luc
 import Section from '../components/Section';
 import Card from '../components/Card';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 
 export default function CaregiversPage() {
 
@@ -62,6 +63,11 @@ export default function CaregiversPage() {
 
   return (
     <>
+      <SEO
+        title="Our Caregivers | Licensed Nurses in Houston | Andora"
+        description="Background-checked, highly trained RNs, LVNs, and CNAs providing compassionate private duty home care in Houston. Meet the heart of Andora Home Care."
+        canonical="/caregivers"
+      />
       <Section
         className="pt-24 pb-8 bg-gradient-to-br from-blue-50 to-white"
       >
