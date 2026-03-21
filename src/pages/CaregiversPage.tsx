@@ -142,7 +142,7 @@ export default function CaregiversPage() {
             <Button
               variant="cta"
               size="large"
-              onClick={() => window.location.href = 'mailto:Privatecare@andorahealth.com?subject=Caregiver Application&body=Hello, I am interested in applying for a caregiver position at Andora Healthcare.%0D%0A%0D%0AName:%0D%0APhone:%0D%0ALicense/Certification:%0D%0AYears of Experience:%0D%0A%0D%0APlease find my resume attached.'}
+              onClick={() => window.location.href = 'https://telescopehr.com/onboarding/overview/wdNO94bIODgFmIMMBKrzyS0H2GIphE/646'}
             >
               Apply Now
             </Button>
