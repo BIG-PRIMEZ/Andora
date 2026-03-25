@@ -142,7 +142,7 @@ export default function CaregiversPage() {
             <Button
               variant="cta"
               size="large"
-              onClick={() => window.location.href = 'https://telescopehr.com/onboarding/overview/wdNO94bIODgFmIMMBKrzyS0H2GIphE/646'}
+              onClick={() => window.location.href = 'https://telescopehr.com/onboarding/job-list/wdNO94bIODgFmIMMBKrzyS0H2GIphE'}
             >
               Apply Now
             </Button>
