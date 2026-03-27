@@ -82,47 +82,40 @@ export default function SkilledNursingPage() {
       />
 
       {/* Hero */}
-      <Section
-        className="pt-32 pb-20 bg-cover bg-no-repeat min-h-[550px] flex items-center relative"
-        style={{ backgroundImage: "url('/Layer 9.png')", backgroundPosition: 'center 30%' }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
-        <div className="relative z-10 max-w-3xl">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="bg-white/20 rounded-full p-3">
-              <Stethoscope className="text-white" size={32} />
+      <section className="bg-white overflow-hidden">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-2 gap-0 md:gap-8 items-center">
+            {/* Left — Text */}
+            <div className="pt-6 pb-4 md:py-10">
+              <div className="flex items-center gap-2 mb-4">
+                <Stethoscope className="text-cta" size={20} />
+                <span className="text-cta font-semibold text-sm tracking-wide">How We Help</span>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-primary leading-[1.05] mb-5">
+                Skilled Nursing<br />Care
+              </h1>
+
+              <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">
+                Hospital-level nursing expertise delivered in the comfort of your home. As a licensed home care agency in Houston, our RNs and LVNs provide comprehensive in-home care services for seniors from post-surgery recovery to chronic illness management.
+              </p>
             </div>
-            <span className="text-white/90 font-medium text-lg">Our Services</span>
-          </div>
-          <h1 className="heading-1 text-white mb-6">
-            Skilled Nursing Care at Home in Houston
-          </h1>
-          <p className="text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
-            Hospital-level nursing expertise delivered in the comfort of your home. As a licensed home care agency in Houston, our RNs and LVNs provide comprehensive in-home care services for seniors — from post-surgery recovery to chronic illness management.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              variant="cta"
-              size="large"
-              onClick={() => navigate('/contact')}
-            >
-              Schedule a Free Consultation
-            </Button>
-            <Button
-              variant="outline"
-              size="large"
-              className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => window.location.href = 'tel:+13462023538'}
-            >
-              Call (346) 202-3538
-            </Button>
+
+            {/* Right — Image */}
+            <div className="flex items-center justify-center md:py-4">
+              <img
+                src="/Layer 9.png"
+                alt="Skilled nurse providing attentive care to a patient at home in Houston"
+                className="w-full max-h-[350px] md:max-h-[420px] object-cover rounded-2xl"
+              />
+            </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* What We Provide */}
-      <Section>
-        <div className="text-center mb-14">
+      <Section className="!py-10 md:!py-14">
+        <div className="text-center mb-8">
           <h2 className="heading-2 mb-4">In-Home Skilled Nursing Services for Seniors</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             From medication management to complex medical procedures, our licensed RNs and LVNs deliver expert private duty home care for seniors with compassion and precision.
@@ -147,7 +140,7 @@ export default function SkilledNursingPage() {
           <div>
             <h2 className="heading-2 mb-6">Why Families Choose Andora for Skilled Nursing</h2>
             <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-              When choosing a home care agency, experience and trust matter most. Our RN-led clinical team brings years of hospital and home care experience to every patient interaction. We don't just provide care — we coordinate it, communicate it, and continually refine it.
+              When choosing a home care agency, experience and trust matter most. Our RN-led clinical team brings years of hospital and home care experience to every patient interaction. We don't just provide care we coordinate it, communicate it, and continually refine it.
             </p>
             <div className="grid sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
@@ -197,7 +190,7 @@ export default function SkilledNursingPage() {
           <div>
             <h2 className="heading-2 mb-6">Home Care That Improves Quality of Life</h2>
             <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-              Many seniors can avoid hospital readmissions and extended nursing home stays with the right skilled nursing support at home. Unlike nursing home care, in-home care services provide one-on-one attention in a familiar environment — which is proven to improve quality of life for seniors.
+              Many seniors can avoid hospital readmissions and extended nursing home stays with the right skilled nursing support at home. Unlike nursing home care, in-home care services provide one-on-one attention in a familiar environment which is proven to improve quality of life for seniors.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Whether you need home care services for stroke recovery in Houston, post-surgery home care assistance, or ongoing care for elderly parents with chronic illness, our team provides the clinical expertise and compassionate home care for elderly parents that makes the difference.
@@ -226,7 +219,7 @@ export default function SkilledNursingPage() {
         </div>
         <div className="grid md:grid-cols-4 gap-8">
           {[
-            { step: '1', title: 'Free Consultation', description: 'Call us or fill out our contact form. We\'ll discuss your needs and answer all your questions.' },
+            { step: '1', title: 'Initial Consultation', description: 'Call us or fill out our contact form. We\'ll discuss your needs and answer all your questions.' },
             { step: '2', title: 'Care Assessment', description: 'A registered nurse visits your home to evaluate needs and coordinate with your physicians.' },
             { step: '3', title: 'Custom Care Plan', description: 'We develop a personalized care plan tailored to your medical needs, preferences, and goals.' },
             { step: '4', title: 'Care Begins', description: 'Your matched nurse begins care with ongoing RN oversight, communication, and plan adjustments.' },
@@ -249,7 +242,7 @@ export default function SkilledNursingPage() {
             Find Quality In-Home Nursing Care for Your Loved One
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Contact Houston's trusted home health care providers today for a free consultation. Our care coordinators are available to discuss your needs and create a customized in-home care plan for your family.
+            Contact Houston's trusted home health care providers today. Our care coordinators are available to discuss your needs and create a customized in-home care plan for your family.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -257,7 +250,7 @@ export default function SkilledNursingPage() {
               size="large"
               onClick={() => navigate('/contact')}
             >
-              Schedule Free Consultation
+              Schedule a Consultation
             </Button>
             <Button
               variant="outline"

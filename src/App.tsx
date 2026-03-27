@@ -10,7 +10,7 @@ import AboutPage from './pages/AboutPage';
 import CaregiversPage from './pages/CaregiversPage';
 import ContactPage from './pages/ContactPage';
 import ResourcesPage from './pages/ResourcesPage';
-import SkilledNursingPage from './pages/SkilledNursingPage';
+/*import SkilledNursingPage from './pages/SkilledNursingPage';*/
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/services/skilled-nursing" element={<SkilledNursingPage />} />
+            {/* <Route path="/services/skilled-nursing" element={<SkilledNursingPage />} /> */}
             <Route path="/about" element={<AboutPage />} />
             <Route path="/caregivers" element={<CaregiversPage />} />
             <Route path="/contact" element={<ContactPage />} />
