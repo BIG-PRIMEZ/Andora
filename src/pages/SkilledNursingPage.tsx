@@ -219,7 +219,7 @@ export default function SkilledNursingPage() {
         </div>
         <div className="grid md:grid-cols-4 gap-8">
           {[
-            { step: '1', title: 'Initial Consultation', description: 'Call us or fill out our contact form. We\'ll discuss your needs and answer all your questions.' },
+            { step: '1', title: 'Free Consultation', description: 'Call us or fill out our contact form. We\'ll discuss your needs and answer all your questions.' },
             { step: '2', title: 'Care Assessment', description: 'A registered nurse visits your home to evaluate needs and coordinate with your physicians.' },
             { step: '3', title: 'Custom Care Plan', description: 'We develop a personalized care plan tailored to your medical needs, preferences, and goals.' },
             { step: '4', title: 'Care Begins', description: 'Your matched nurse begins care with ongoing RN oversight, communication, and plan adjustments.' },
@@ -242,7 +242,7 @@ export default function SkilledNursingPage() {
             Find Quality In-Home Nursing Care for Your Loved One
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Contact Houston's trusted home health care providers today. Our care coordinators are available to discuss your needs and create a customized in-home care plan for your family.
+            Contact Houston's trusted home health care providers today for a free consultation. Our care coordinators are available to discuss your needs and create a customized in-home care plan for your family.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -250,7 +250,7 @@ export default function SkilledNursingPage() {
               size="large"
               onClick={() => navigate('/contact')}
             >
-              Schedule a Consultation
+              Schedule Free Consultation
             </Button>
             <Button
               variant="outline"
