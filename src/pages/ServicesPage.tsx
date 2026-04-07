@@ -58,7 +58,7 @@ export default function ServicesPage() {
     <>
       <SEO
         title="Home Care Services in Houston | Andora Home Care"
-        description="Skilled nursing, personal care, 24/7 care, companionship, respite, and specialized care services in Houston. Tailored private duty nursing for your unique needs."
+        description="Affordable elderly care in Houston. Skilled nursing, personal care, 24/7 care, respite care, and post-hospital recovery. Explore all types of home care for seniors from Houston's trusted licensed home care agency. Call (346) 202-3538."
         canonical="/services"
       />
       <Section
@@ -67,9 +67,9 @@ export default function ServicesPage() {
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="text-center max-w-3xl mx-auto p-8 relative z-10">
-          <h1 className="heading-1 mb-6 text-white font-bold drop-shadow-lg">Our Services</h1>
+          <h1 className="heading-1 mb-6 text-white font-bold drop-shadow-lg">Types of Home Care for Seniors</h1>
           <p className="text-xl text-white font-semibold leading-relaxed drop-shadow-lg">
-            Comprehensive private duty nursing and care services tailored to meet your unique needs. Our experienced team is dedicated to providing the highest quality care in the comfort of your home.
+            From skilled nursing to companion care, we offer affordable elderly care in Houston tailored to your unique needs. Explore our full range of in-home care services for seniors and find the right fit for your family.
           </p>
         </div>
       </Section>
@@ -108,9 +108,9 @@ export default function ServicesPage() {
 
       <Section className="bg-gradient-to-br from-primary to-blue-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="heading-2 text-white mb-6">Ready to Get Started?</h2>
+          <h2 className="heading-2 text-white mb-6">Not Sure Which Service Is Right?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Contact us today for a free consultation and personalized care plan.
+            Understanding the differences between home care and home health care can be confusing. Contact us today for a free consultation — we'll help you determine the right type and level of care, answer your top questions, and create a personalized care plan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

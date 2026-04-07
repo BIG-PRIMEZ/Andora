@@ -11,6 +11,10 @@ import CaregiversPage from './pages/CaregiversPage';
 import ContactPage from './pages/ContactPage';
 import ResourcesPage from './pages/ResourcesPage';
 import SkilledNursingPage from './pages/SkilledNursingPage';
+import PersonalCarePage from './pages/PersonalCarePage';
+import AdvancedCarePage from './pages/AdvancedCarePage';
+import PostHospitalPage from './pages/PostHospitalPage';
+import RespiteCarePage from './pages/RespiteCarePage';
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/services/skilled-nursing" element={<SkilledNursingPage />} />
+            <Route path="/services/personal-care" element={<PersonalCarePage />} />
+            <Route path="/services/24-7-care" element={<AdvancedCarePage />} />
+            <Route path="/services/post-hospital-recovery" element={<PostHospitalPage />} />
+            <Route path="/services/respite-care" element={<RespiteCarePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/caregivers" element={<CaregiversPage />} />
             <Route path="/contact" element={<ContactPage />} />

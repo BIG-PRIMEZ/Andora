@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
 
           <div className="mt-8 rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/advanced_care.jpeg"
               alt="Professional healthcare team ready to provide compassionate care"
               className="w-full h-64 object-cover"
               loading="lazy"

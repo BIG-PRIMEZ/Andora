@@ -7,28 +7,33 @@ import { FAQPageSchema } from '../components/StructuredData';
 export default function ResourcesPage() {
   const guides = [
     {
-      title: 'Understanding Home Health Care',
-      description: 'A comprehensive guide to home healthcare services, what to expect, and how to choose the right provider.',
+      title: 'What Is Home Care for Elderly?',
+      description: 'A comprehensive guide to understanding the differences between home care and home health care, types of services available, and what to expect.',
       category: 'Getting Started'
     },
     {
+      title: 'Signs Your Loved One Needs Home Care',
+      description: 'Learn to recognize the key signs that indicate it may be time to consider in-home care services for your aging parent or family member.',
+      category: 'Getting Started'
+    },
+    {
+      title: 'How to Pay for Home Care Services',
+      description: 'Understanding costs of home care services for seniors, insurance options, Medicare coverage, and financial planning for long-term care.',
+      category: 'Financial Planning'
+    },
+    {
       title: 'Caring for Someone with Dementia',
-      description: 'Expert tips and strategies for providing safe, compassionate care for loved ones with dementia or Alzheimer\'s.',
+      description: 'Expert tips on common challenges in senior caregiving for dementia and Alzheimer\'s — including safety, communication, and emotional support.',
       category: 'Caregiving Tips'
     },
     {
-      title: 'Family Caregiver Support',
-      description: 'Resources and advice for family members taking on caregiving responsibilities, including self-care strategies.',
-      category: 'Family Support'
-    },
-    {
-      title: 'Medication Management at Home',
-      description: 'Best practices for safely managing medications, organizing schedules, and preventing errors.',
-      category: 'Health & Safety'
+      title: 'Best Practices for Hiring a Home Care Provider',
+      description: 'Top questions to ask a home care provider, how to evaluate a home care agency, and what to look for in quality caregivers.',
+      category: 'Choosing Care'
     },
     {
       title: 'Fall Prevention Guide',
-      description: 'Creating a safe home environment and reducing fall risks for elderly or mobility-impaired individuals.',
+      description: 'Creating a safe home environment and reducing fall risks for elderly or mobility-impaired individuals living at home.',
       category: 'Health & Safety'
     }
   ];
@@ -122,7 +127,7 @@ export default function ResourcesPage() {
     <>
       <SEO
         title="Home Care Resources & FAQs | Andora Home Care"
-        description="Helpful guides and frequently asked questions about home healthcare services in Houston. Expert resources for families and caregivers from Andora Home Care."
+        description="Learn what is home care for elderly, how to pay for home care services, signs your loved one needs home care, and more. Free guides, FAQs, and resources from Houston's trusted home care agency."
         canonical="/resources"
       />
       <FAQPageSchema faqs={faqs} />
@@ -132,7 +137,7 @@ export default function ResourcesPage() {
         <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Resources & Support</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Access helpful guides, videos, and tools to support your healthcare journey. We're committed to empowering families with knowledge and resources.
+            What is home care for elderly? How do you pay for home care services? Access helpful guides covering costs of home care services for seniors, signs your loved one needs home care, and best practices for hiring a home care provider.
           </p>
         </div>
       </Section>

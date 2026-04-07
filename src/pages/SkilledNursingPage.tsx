@@ -1,7 +1,6 @@
 import { Stethoscope, CheckCircle, Shield, Clock, Heart, Users, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
-import Card from '../components/Card';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 
@@ -12,26 +11,32 @@ export default function SkilledNursingPage() {
     {
       title: 'Medication Administration',
       description: 'Safe and accurate medication management including oral, injectable, and IV medications with careful monitoring for side effects and interactions.',
+      image: '/medication_ad.png',
     },
     {
       title: 'Wound Care',
       description: 'Professional wound assessment, cleaning, dressing changes, and monitoring for infection. Specialized care for surgical wounds, pressure ulcers, and chronic wounds.',
+      image: '/wound_care.png',
     },
     {
       title: 'IV Therapy',
       description: 'In-home intravenous therapy including antibiotics, hydration, pain management, and nutrition support administered by experienced RNs.',
+      image: '/IV_therapy.png',
     },
     {
       title: 'Post-Surgery Home Care Assistance',
       description: 'Comprehensive post-surgery home care assistance in Houston including pain management, wound monitoring, mobility support, and coordination with your surgical team for a safe recovery.',
+      image: '/post_surgical.png',
     },
     {
       title: 'Chronic Disease Management',
       description: 'Senior care at home for individuals with chronic illness including diabetes, heart disease, and COPD. Ongoing monitoring and home care assistance for elderly with diabetes and other conditions to prevent hospitalizations.',
+      image: '/chronic_disease.png',
     },
     {
       title: 'Health Assessments & Monitoring',
       description: 'Regular vital sign monitoring, health status evaluations, and early detection of changes. Our home health care providers ensure timely medical intervention when needed.',
+      image: '/health_assesment.png',
     },
   ];
 
@@ -99,6 +104,18 @@ export default function SkilledNursingPage() {
               <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">
                 Hospital-level nursing expertise delivered in the comfort of your home. As a licensed home care agency in Houston, our RNs and LVNs provide comprehensive in-home care services for seniors from post-surgery recovery to chronic illness management.
               </p>
+
+              <Button
+                variant="cta"
+                size="large"
+                onClick={() => navigate('/contact')}
+                className="shadow-lg shadow-orange-500/25"
+              >
+                <span className="flex items-center gap-2">
+                  Get Your Free Consultation
+                  <ArrowRight size={18} />
+                </span>
+              </Button>
             </div>
 
             {/* Right — Image */}
@@ -123,13 +140,23 @@ export default function SkilledNursingPage() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-xl transition-smooth">
-              <div className="bg-primary/10 rounded-full p-3 w-fit mb-4">
-                <CheckCircle className="text-primary" size={24} />
+            <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+                <h3 className="absolute bottom-4 left-5 right-5 font-bold text-lg text-white drop-shadow-md">
+                  {service.title}
+                </h3>
               </div>
-              <h3 className="font-bold text-lg mb-3 text-primary">{service.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
-            </Card>
+              <div className="p-5">
+                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+              </div>
+            </div>
           ))}
         </div>
       </Section>

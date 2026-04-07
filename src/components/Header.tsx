@@ -5,11 +5,10 @@ import Button from './Button';
 
 const serviceLinks = [
   { label: 'Skilled Nursing Care', href: '/services/skilled-nursing' },
-  { label: 'Personal Care', href: '/services/personal-care' },
-  { label: '24/7 Care', href: '/services/24-7-care' },
-  { label: 'Companionship', href: '/services/companionship' },
-  { label: 'Respite Care', href: '/services/respite-care' },
-  { label: 'Specialized Care', href: '/services/specialized-care' },
+  { label: 'Personal Care & Daily Support', href: '/services/personal-care' },
+  { label: 'Advanced Care & 24-Hour Support', href: '/services/24-7-care' },
+  { label: 'Post-Hospital Recovery', href: '/services/post-hospital-recovery' },
+  { label: 'Respite Care & Family Support', href: '/services/respite-care' },
 ];
 
 export default function Header() {
