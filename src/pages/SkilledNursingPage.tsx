@@ -102,7 +102,7 @@ export default function SkilledNursingPage() {
               </h1>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">
-                Hospital-level nursing expertise delivered in the comfort of your home. As a licensed home care agency in Houston, our RNs and LVNs provide comprehensive in-home care services for seniors from post-surgery recovery to chronic illness management.
+                Hospital-level nursing expertise delivered in the comfort of your home. As a licensed home care agency in Houston, our RNs and LVNs provide comprehensive in home care services for seniors from post-surgery recovery to chronic illness management.
               </p>
 
               <Button
