@@ -7,37 +7,37 @@ const services = [
     icon: Stethoscope,
     title: 'Skilled Nursing Care',
     description: 'Licensed nurses providing medical care, wound care, medication management, and vital sign monitoring.',
-    image: '/nursing_care.png',
+    image: '/Layer 9.png',
   },
   {
     icon: Activity,
     title: 'Post-Surgical Care',
     description: 'Specialized recovery support following hospital discharge, ensuring safe healing at home.',
-    image: '/post_surgical.png',
+    image: '/IMG_2598.JPG',
   },
   {
     icon: Heart,
     title: 'Chronic Disease Management',
     description: 'Expert care for diabetes, heart disease, COPD, and other ongoing health conditions.',
-    image: '/chronic_disease.png',
+    image: 'https://images.pexels.com/photos/7551616/pexels-photo-7551616.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     icon: Users,
     title: 'Companion Care',
     description: 'Compassionate companionship, assistance with daily activities, and emotional support.',
-    image: '/companionship.png',
+    image: '/Layer 10.jpeg',
   },
   {
     icon: Home,
     title: 'Personal Care',
     description: 'Help with bathing, dressing, grooming, and maintaining dignity and independence.',
-    image: '/personal_hygiene.png',
+    image: 'https://images.pexels.com/photos/7551668/pexels-photo-7551668.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     icon: Pill,
     title: 'Medication Management',
     description: 'Ensuring proper medication administration and monitoring for side effects.',
-    image: '/medication_ad.png',
+    image: '/Layer13.jpeg',
   },
 ];
 

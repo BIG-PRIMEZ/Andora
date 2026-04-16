@@ -1,174 +1,168 @@
-import { DollarSign, CalendarClock, TrendingUp, Heart, CheckCircle } from 'lucide-react';
+import { GraduationCap, Heart, Shield, UserCheck, Award, CheckCircle } from 'lucide-react';
 import Section from '../components/Section';
+import Card from '../components/Card';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
-import FAQ from '../components/FAQ';
 
 export default function CaregiversPage() {
 
-  const perks = [
+  const qualifications = [
     {
-      icon: DollarSign,
-      title: 'Competitive Compensation',
-      description: 'We offer industry-leading pay rates and benefits packages.',
+      icon: GraduationCap,
+      title: 'Highly Trained Professionals',
+      description: 'All our nurses are licensed RNs or LVNs with extensive clinical experience and ongoing education.'
     },
     {
-      icon: CalendarClock,
-      title: 'Flexible Scheduling',
-      description: 'Work hours that fit your lifestyle and personal commitments.',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Career Growth',
-      description: 'Opportunities for advancement and professional development.',
+      icon: Shield,
+      title: 'Background Checked',
+      description: 'Every caregiver undergoes comprehensive background checks and credential verification.'
     },
     {
       icon: Heart,
-      title: 'Supportive Environment',
-      description: 'Join a team that values your contributions and well-being.',
+      title: 'Compassionate Care',
+      description: 'Selected not just for skills, but for genuine compassion and dedication to patient care.'
     },
+    {
+      icon: Award,
+      title: 'Certified Specialists',
+      description: 'Many hold specialized certifications in dementia care, wound care, IV therapy, and more.'
+    }
+  ];
+
+  const process = [
+    {
+      step: '1',
+      title: 'Structured Screening',
+      description: 'A multi-step interview process, background verification, and clinical skill validation before joining our team.'
+    },
+    {
+      step: '2',
+      title: 'Ongoing Training',
+      description: 'Continued education in safety protocols, evolving care techniques, and professionalism to maintain high standards in every home.'
+    },
+    {
+      step: '3',
+      title: 'Thoughtful Matching',
+      description: 'Caregivers are carefully paired based on clinical needs, personality fit, household dynamics, and long-term stability.'
+    },
+    {
+      step: '4',
+      title: 'Active Oversight',
+      description: 'Regular RN supervision, performance evaluations, and direct communication to ensure consistent quality of care.'
+    }
+  ];
+
+  const benefits = [
+    'Competitive compensation and benefits',
+    'Flexible scheduling options',
+    'Professional development opportunities',
+    'Supportive team environment',
+    'Continuing education credits',
+    'Recognition and rewards programs'
   ];
 
   return (
     <>
       <SEO
-        title="Careers at Andora Home Care | Join Our Team in Houston"
-        description="Join Andora Home Care in Houston. We're hiring compassionate RNs, LVNs, CNAs, and home health aides. Competitive pay, flexible scheduling, and career growth. Apply today."
+        title="Our Caregivers | Licensed Nurses in Houston | Andora"
+        description="Background-checked, highly trained RNs, LVNs, and CNAs providing compassionate private duty home care in Houston. Meet the heart of Andora Home Care."
         canonical="/caregivers"
       />
-
-      {/* Hero */}
-      <Section className="pt-24 pb-12 bg-gradient-to-br from-blue-50 to-white">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="heading-1 mb-6">
-            Join Our Compassionate Team at Andora Home Care
-          </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Make a meaningful difference in people's lives. We're looking for compassionate, dedicated home care professionals to join our team in Houston, TX and surrounding areas.
+      <Section
+        className="pt-24 pb-8 bg-gradient-to-br from-blue-50 to-white"
+      >
+        <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
+          <h1 className="heading-1 mb-6">Our Caregivers</h1>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Meet the heart of Andora. Our team of dedicated nurses and caregivers are the finest professionals in home healthcare, chosen for their expertise, compassion, and commitment to excellence.
           </p>
         </div>
       </Section>
 
-      {/* Why Choose a Career - Split Layout */}
       <Section>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="heading-2 mb-4">Why Choose a Career with Andora Home Care?</h2>
-            <p className="text-gray-600 leading-relaxed mb-8">
-              At Andora Home Care, we value our caregivers and recognize the essential role they play in our clients' lives. We're committed to creating a supportive, rewarding work environment where you can grow professionally while making a meaningful impact in the Houston, TX community and beyond.
-            </p>
-            <div className="space-y-6">
-              {perks.map((perk, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="bg-primary/10 rounded-xl p-3 h-fit flex-shrink-0">
-                    <perk.icon className="text-primary" size={22} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-sm mb-1">{perk.title}</h3>
-                    <p className="text-gray-600 text-sm">{perk.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Image Card */}
-          <div className="relative rounded-2xl overflow-hidden shadow-xl">
-            <img
-              src="/IMG_2598.JPG"
-              alt="Andora Home Care professionals providing compassionate care"
-              className="w-full h-[480px] object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-8">
-              <span className="inline-block bg-cta text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-                Now Hiring
-              </span>
-              <h3 className="text-2xl font-bold text-white mb-2">Home Care Professionals</h3>
-              <p className="text-blue-100 text-sm mb-4">
-                Join our team of compassionate home care professionals and make a difference in people's lives every day.
-              </p>
-              <Button
-                variant="outline"
-                size="small"
-                className="border-white text-white hover:bg-white hover:text-primary text-sm"
-                onClick={() => {
-                  const el = document.getElementById('current-openings');
-                  el?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                View Open Positions
-              </Button>
-            </div>
-          </div>
+        <div className="text-center mb-12">
+          <h2 className="heading-2 mb-4">What Sets Our Team Apart</h2>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {qualifications.map((qual, index) => (
+            <Card key={index} className="text-center hover:shadow-xl transition-smooth">
+              <div className="bg-primary/10 rounded-full p-4 w-fit mx-auto mb-4">
+                <qual.icon className="text-primary" size={32} />
+              </div>
+              <h3 className="heading-3 mb-3">{qual.title}</h3>
+              <p className="text-gray-600 text-sm">{qual.description}</p>
+            </Card>
+          ))}
         </div>
       </Section>
 
-      {/* Current Openings - TelescopeHR Embed */}
-      <Section background="light" id="current-openings">
-        <div className="text-center mb-10">
-          <h2 className="heading-2 mb-4">Current Openings</h2>
+      <Section className="bg-gray-50">
+        <div className="text-center mb-12">
+          <h2 className="heading-2 mb-4">Our Selection Process</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Browse our open positions below and apply directly. We're always looking for talented, compassionate healthcare professionals to join the Andora family.
+            We maintain the highest standards to ensure every caregiver represents the excellence you deserve.
           </p>
         </div>
-        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-white">
-          <iframe
-            src="https://telescopehr.com/onboarding/job-list/wdNO94bIODgFmIMMBKrzyS0H2GIphE"
-            title="Andora Home Care Job Openings"
-            className="w-full border-0"
-            style={{ minHeight: '700px' }}
-            loading="lazy"
-          />
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {process.map((item, index) => (
+            <div key={index} className="relative">
+              <div className="bg-white rounded-xl p-6 shadow-md h-full">
+                <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">
+                  {item.step}
+                </div>
+                <h3 className="font-bold text-lg mb-3">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.description}</p>
+              </div>
+              {index < process.length - 1 && (
+                <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                  <div className="text-primary">→</div>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </Section>
 
-      {/* What We Look For */}
       <Section>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="heading-2 mb-6">What We Look For</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              We hire caregivers who share our commitment to excellence, compassion, and professionalism. If you're dedicated to making a real impact in people's lives, we want to hear from you.
+            <h2 className="heading-2 mb-6">Join Our Team</h2>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Are you a compassionate healthcare professional looking to make a real difference in people's lives? Andora offers a rewarding career where you can provide exceptional one-on-one care in a supportive environment.
             </p>
-            <ul className="space-y-3">
-              {[
-                'Current Texas RN, LVN, CNA, or HHA certification',
-                'Genuine passion for patient care and well-being',
-                'Strong communication and interpersonal skills',
-                'Reliable, punctual, and detail-oriented',
-                'Ability to pass comprehensive background check',
-                'Minimum 1 year of caregiving experience preferred',
-              ].map((item, index) => (
+            <h3 className="font-bold text-lg mb-4">Why Join Andora?</h3>
+            <ul className="space-y-3 mb-8">
+              {benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckCircle className="text-primary flex-shrink-0 mt-0.5" size={18} />
-                  <span className="text-gray-700 text-sm">{item}</span>
+                  <CheckCircle className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span className="text-gray-700">{benefit}</span>
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="bg-gradient-to-br from-primary to-blue-700 text-white rounded-2xl p-10">
-            <h3 className="text-2xl font-bold mb-6">Ready to Apply?</h3>
-            <p className="text-blue-100 mb-4 leading-relaxed">
-              Take the first step toward a rewarding career in home healthcare. Browse our current openings above or send us your resume directly.
-            </p>
-            <p className="text-blue-100 mb-8 text-sm">
-              Questions? Email us at <a href="mailto:Privatecare@andorahealth.com" className="text-white underline">Privatecare@andorahealth.com</a> or call <a href="tel:+13462023538" className="text-white underline">(346) 202-3538</a>.
-            </p>
             <Button
               variant="cta"
               size="large"
-              fullWidth
-              onClick={() => window.open('https://telescopehr.com/onboarding/job-list/wdNO94bIODgFmIMMBKrzyS0H2GIphE', '_blank')}
+              onClick={() => window.location.href = 'https://telescopehr.com/onboarding/job-list/wdNO94bIODgFmIMMBKrzyS0H2GIphE'}
             >
               Apply Now
             </Button>
           </div>
+          <div className="bg-gradient-to-br from-primary to-blue-700 text-white rounded-2xl p-8">
+            <UserCheck size={48} className="mb-6" />
+            <h3 className="text-2xl font-bold mb-4">We're Hiring!</h3>
+            <p className="text-blue-100 mb-6">
+              Current openings for licensed nurses (RN/LVN) and certified caregivers across the Houston area.
+            </p>
+            <ul className="space-y-2 text-blue-100 text-sm">
+              <li>• Registered Nurses (RN)</li>
+              <li>• Licensed Vocational Nurses (LVN)</li>
+              <li>• Certified Nursing Assistants (CNA)</li>
+              <li>• Home Health Aides (HHA)</li>
+              <li>• Personal Care Attendants</li>
+            </ul>
+          </div>
         </div>
       </Section>
-
-      {/* FAQ */}
-      <FAQ />
     </>
   );
 }
