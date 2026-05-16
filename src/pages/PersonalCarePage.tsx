@@ -14,11 +14,6 @@ export default function PersonalCarePage() {
       image: '/personal_hygiene.png',
     },
     {
-      title: 'Dressing & Grooming',
-      description: 'Help with selecting clothing, dressing, hair care, and grooming so your loved one always feels their best and maintains their personal routine.',
-      image: '/dressing.png',
-    },
-    {
       title: 'Mobility & Transfer Support',
       description: 'Safe assistance with walking, transfers, and positioning for elderly with mobility issues — reducing fall risk while encouraging independence.',
       image: '/mobility.png',
@@ -27,11 +22,6 @@ export default function PersonalCarePage() {
       title: 'Meal Preparation & Nutrition',
       description: 'Nutritious meal planning, preparation, and feeding assistance tailored to dietary requirements, preferences, and physician recommendations.',
       image: '/meal_preparation.png',
-    },
-    {
-      title: 'Light Housekeeping',
-      description: 'Maintaining a clean, safe living environment including laundry, dishes, tidying, and organizing — so your loved one can focus on what matters most.',
-      image: '/housekeeping.png',
     },
     {
       title: 'Companionship & Emotional Support',
@@ -136,10 +126,10 @@ export default function PersonalCarePage() {
             Our personal care services cover every aspect of daily living — from personal hygiene care for elderly at home to companionship and emotional support for seniors living alone.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}

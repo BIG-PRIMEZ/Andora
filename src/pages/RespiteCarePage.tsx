@@ -28,16 +28,6 @@ export default function RespiteCarePage() {
       description: 'Companion care services for seniors that go beyond supervision — meaningful engagement, conversation, activities, and emotional support to brighten their day.',
       image: '/livein_caregiver.png',
     },
-    {
-      title: 'Family Caregiver Coaching',
-      description: 'Guidance and practical training for family caregivers on safe lifting, medication management, and recognizing common challenges in senior caregiving.',
-      image: '/health_assesment.png',
-    },
-    {
-      title: 'Care Plan Continuity',
-      description: 'We follow your established routines and care instructions precisely — so your loved one experiences consistent, familiar care even in your absence.',
-      image: '/nursing_care.png',
-    },
   ];
 
   const benefits = [
@@ -134,10 +124,10 @@ export default function RespiteCarePage() {
             Respite care provides temporary relief for family caregivers while ensuring your loved one receives the same quality of compassionate care — from companionship to skilled support.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
