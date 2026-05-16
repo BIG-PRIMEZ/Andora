@@ -1,0 +1,293 @@
+import { Clock, CheckCircle, Shield, Brain, Users, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import Section from '../components/Section';
+import Button from '../components/Button';
+import SEO from '../components/SEO';
+
+export default function AdvancedCarePage() {
+  const navigate = useNavigate();
+
+  const services = [
+    {
+      title: '24-Hour Nursing Care',
+      description: 'Round-the-clock RN and LVN care for seniors who need continuous medical supervision, monitoring, and support — day and night, 365 days a year.',
+      image: '/nursing_care.png',
+    },
+    {
+      title: 'Dementia Home Care',
+      description: 'Specialized dementia home care services with structured routines, safety protocols, and compassionate engagement designed to reduce confusion and agitation.',
+      image: '/demetia.png',
+    },
+    {
+      title: "Alzheimer's Care",
+      description: "Dedicated in-home Alzheimer's care services with trained caregivers who understand disease progression, communication techniques, and behavioral management.",
+      image: '/alzheimer.png',
+    },
+    {
+      title: "Parkinson's Disease Care",
+      description: "In-home care for Parkinson's patients in Houston including mobility assistance, fall prevention, medication management, and daily living support.",
+      image: '/parkison.png',
+    },
+    {
+      title: 'Live-In Caregiver Services',
+      description: 'Live-in caregiver services in Houston for seniors who need a consistent, around-the-clock presence — providing security, companionship, and medical support.',
+      image: '/livein_caregiver.png',
+    },
+    {
+      title: 'Overnight Monitoring',
+      description: 'Dedicated overnight care for seniors at risk of falls, wandering, or medical emergencies — so families can rest knowing their loved one is safe.',
+      image: '/overnight.png',
+    },
+  ];
+
+  const benefits = [
+    {
+      icon: Shield,
+      title: 'Specialized Training',
+      description: 'Caregivers certified in dementia, Alzheimer\'s, and complex care with ongoing clinical education.',
+    },
+    {
+      icon: Clock,
+      title: 'True 24/7 Coverage',
+      description: '24/7 home care for seniors with seamless shift transitions and RN oversight around the clock.',
+    },
+    {
+      icon: Brain,
+      title: 'Cognitive Care Expertise',
+      description: 'Evidence-based approaches to memory care, behavioral management, and cognitive stimulation.',
+    },
+    {
+      icon: Users,
+      title: 'Family Peace of Mind',
+      description: 'Regular updates, transparent communication, and a dedicated care team your family can trust.',
+    },
+  ];
+
+  const conditions = [
+    'Alzheimer\'s disease',
+    'Vascular dementia',
+    'Lewy body dementia',
+    'Parkinson\'s disease',
+    'Frontotemporal dementia',
+    'Traumatic brain injury',
+    'Advanced COPD',
+    'Late-stage heart failure',
+    'ALS and neuromuscular diseases',
+    'End-of-life care needs',
+    'Post-stroke complications',
+    'Severe mobility limitations',
+  ];
+
+  return (
+    <>
+      <SEO
+        title="24/7 Home Care & Dementia Care in Houston | Andora Home Care"
+        description="Specialized 24/7 home care for seniors in Houston. Dementia home care services, Alzheimer's care, Parkinson's care, and live-in caregiver services. Licensed home care agency with around-the-clock RN oversight. Call (346) 202-3538."
+        canonical="/services/24-7-care"
+      />
+
+      {/* Hero */}
+      <section className="bg-white overflow-hidden">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-2 gap-0 md:gap-8 items-center">
+            <div className="pt-6 pb-4 md:py-10">
+              <div className="flex items-center gap-2 mb-4">
+                <Clock className="text-cta" size={20} />
+                <span className="text-cta font-semibold text-sm tracking-wide">How We Help</span>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-primary leading-[1.05] mb-5">
+                Advanced Care<br />& 24-Hour Support
+              </h1>
+
+              <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">
+                Specialized home care for dementia patients, Alzheimer's, Parkinson's, and complex medical conditions in Houston. Our trained caregivers provide 24/7 home care for seniors with the expertise and compassion your loved one deserves.
+              </p>
+
+              <Button
+                variant="cta"
+                size="large"
+                onClick={() => navigate('/contact')}
+                className="shadow-lg shadow-orange-500/25"
+              >
+                <span className="flex items-center gap-2">
+                  Get Your Free Consultation
+                  <ArrowRight size={18} />
+                </span>
+              </Button>
+            </div>
+
+            <div className="flex items-center justify-center md:py-4">
+              <img
+                src="/advanced_care.jpeg"
+                alt="Caregiver providing 24-hour home care support to elderly patient"
+                className="w-full max-h-[350px] md:max-h-[420px] object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Provide */}
+      <Section className="!py-10 md:!py-14">
+        <div className="text-center mb-8">
+          <h2 className="heading-2 mb-4">How Does Home Care Help with Dementia?</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Our advanced care services combine clinical expertise with compassionate support to help seniors with complex conditions remain safely at home with dignity.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+                <h3 className="absolute bottom-4 left-5 right-5 font-bold text-lg text-white drop-shadow-md">
+                  {service.title}
+                </h3>
+              </div>
+              <div className="p-5">
+                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Why Choose Andora */}
+      <Section background="light">
+        <div className="grid md:grid-cols-2 gap-14 items-center">
+          <div>
+            <h2 className="heading-2 mb-6">Why Families Trust Andora for 24/7 Care</h2>
+            <p className="text-gray-600 mb-8 leading-relaxed text-lg">
+              When evaluating a home care agency for advanced or around-the-clock care, specialized training and consistent oversight are everything. Our team is purpose-built for complex care situations that demand more than standard home care.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-6">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="flex gap-4">
+                  <div className="bg-primary/10 rounded-xl p-3 h-fit">
+                    <benefit.icon className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm mb-1">{benefit.title}</h3>
+                    <p className="text-gray-600 text-sm">{benefit.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="relative">
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src="/advanced_care.jpeg"
+                alt="Professional caregiver providing specialized dementia care at home"
+                className="w-full h-[450px] object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 bg-primary text-white rounded-xl p-6 shadow-lg max-w-[240px] hidden md:block">
+              <p className="text-3xl font-bold mb-1">24/7</p>
+              <p className="text-sm text-blue-100">Around-the-clock expert care</p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Conditions We Support */}
+      <Section>
+        <div className="grid md:grid-cols-2 gap-14 items-center">
+          <div className="bg-gradient-to-br from-primary to-blue-700 rounded-2xl p-10 text-white">
+            <h2 className="text-2xl font-bold mb-8">Conditions We Specialize In</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {conditions.map((condition, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <CheckCircle className="text-blue-200 flex-shrink-0" size={18} />
+                  <span className="text-blue-50">{condition}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="heading-2 mb-6">Home Care for Seniors with Alzheimer's Disease</h2>
+            <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+              Choosing between home care vs. nursing home care is one of the most difficult decisions families face. Research consistently shows that seniors with dementia and Alzheimer's thrive in familiar environments with consistent caregivers — exactly what our 24-hour in-home care provides.
+            </p>
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              Our specialized home care for dementia patients in Houston provides the structure, safety, and emotional support in senior home care that helps slow decline and improve quality of life — without the disruption of facility placement.
+            </p>
+            <Button
+              variant="primary"
+              size="large"
+              onClick={() => navigate('/contact')}
+            >
+              <span className="flex items-center gap-2">
+                Get Started Today
+                <ArrowRight size={18} />
+              </span>
+            </Button>
+          </div>
+        </div>
+      </Section>
+
+      {/* How It Works */}
+      <Section background="light">
+        <div className="text-center mb-14">
+          <h2 className="heading-2 mb-4">Understanding Senior Care Options at Home</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Getting started with 24/7 or advanced care is straightforward. We manage every detail so your family can focus on what matters.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-4 gap-8">
+          {[
+            { step: '1', title: 'Free Consultation', description: 'We discuss your loved one\'s condition, care needs, and family goals to understand the full picture.' },
+            { step: '2', title: 'Clinical Assessment', description: 'An RN evaluates medical needs, cognitive status, safety risks, and home environment.' },
+            { step: '3', title: 'Specialized Care Plan', description: 'We create a comprehensive plan with 24-hour scheduling, safety protocols, and emergency procedures.' },
+            { step: '4', title: 'Care Team Deployed', description: 'Your dedicated care team begins with seamless shift coordination and ongoing family communication.' },
+          ].map((item, index) => (
+            <div key={index} className="text-center">
+              <div className="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center text-xl font-bold mx-auto mb-5">
+                {item.step}
+              </div>
+              <h3 className="font-bold text-lg mb-3">{item.title}</h3>
+              <p className="text-gray-600 text-sm">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* CTA */}
+      <Section className="bg-gradient-to-br from-primary to-blue-700 text-white">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Expert 24/7 Care for Your Loved One
+          </h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Contact Houston's best home care agency for elderly today. Our specialized care coordinators are ready to discuss dementia care, Alzheimer's support, and around-the-clock nursing.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              variant="cta"
+              size="large"
+              onClick={() => navigate('/contact')}
+            >
+              Schedule Free Consultation
+            </Button>
+            <Button
+              variant="outline"
+              size="large"
+              className="border-white text-white hover:bg-white hover:text-primary"
+              onClick={() => window.location.href = 'tel:+13462023538'}
+            >
+              Call (346) 202-3538
+            </Button>
+          </div>
+        </div>
+      </Section>
+    </>
+  );
+}
