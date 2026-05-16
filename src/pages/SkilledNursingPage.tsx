@@ -19,11 +19,6 @@ export default function SkilledNursingPage() {
       image: '/wound_care.png',
     },
     {
-      title: 'IV Therapy',
-      description: 'In-home intravenous therapy including antibiotics, hydration, pain management, and nutrition support administered by experienced RNs.',
-      image: '/IV_therapy.png',
-    },
-    {
       title: 'Post-Surgery Home Care Assistance',
       description: 'Comprehensive post-surgery home care assistance in Houston including pain management, wound monitoring, mobility support, and coordination with your surgical team for a safe recovery.',
       image: '/post_surgical.png',
@@ -32,11 +27,6 @@ export default function SkilledNursingPage() {
       title: 'Chronic Disease Management',
       description: 'Senior care at home for individuals with chronic illness including diabetes, heart disease, and COPD. Ongoing monitoring and home care assistance for elderly with diabetes and other conditions to prevent hospitalizations.',
       image: '/chronic_disease.png',
-    },
-    {
-      title: 'Health Assessments & Monitoring',
-      description: 'Regular vital sign monitoring, health status evaluations, and early detection of changes. Our home health care providers ensure timely medical intervention when needed.',
-      image: '/health_assesment.png',
     },
   ];
 
@@ -138,10 +128,10 @@ export default function SkilledNursingPage() {
             From medication management to complex medical procedures, our licensed RNs and LVNs deliver expert private duty home care for seniors with compassion and precision.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}

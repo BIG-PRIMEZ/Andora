@@ -28,16 +28,6 @@ export default function PostHospitalPage() {
       description: 'Expert medication administration, schedule coordination, and side-effect monitoring — especially critical during the transition from hospital to home care.',
       image: '/medication_ad.png',
     },
-    {
-      title: 'Rehabilitation Support',
-      description: 'Assistance with prescribed exercises, mobility training, and daily activities to rebuild strength, independence, and confidence after hospitalization.',
-      image: '/health_assesment.png',
-    },
-    {
-      title: 'Care Coordination',
-      description: 'Seamless communication between your hospital team, primary physician, specialists, and our nurses to ensure nothing falls through the cracks during recovery.',
-      image: '/chronic_disease.png',
-    },
   ];
 
   const benefits = [
@@ -134,10 +124,10 @@ export default function PostHospitalPage() {
             Our recovery care bridges the gap between hospital discharge and full independence — with skilled nursing oversight at every step.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}

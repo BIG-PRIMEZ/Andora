@@ -24,19 +24,9 @@ export default function AdvancedCarePage() {
       image: '/alzheimer.png',
     },
     {
-      title: "Parkinson's Disease Care",
-      description: "In-home care for Parkinson's patients in Houston including mobility assistance, fall prevention, medication management, and daily living support.",
-      image: '/parkison.png',
-    },
-    {
       title: 'Live-In Caregiver Services',
       description: 'Live-in caregiver services in Houston for seniors who need a consistent, around-the-clock presence — providing security, companionship, and medical support.',
       image: '/livein_caregiver.png',
-    },
-    {
-      title: 'Overnight Monitoring',
-      description: 'Dedicated overnight care for seniors at risk of falls, wandering, or medical emergencies — so families can rest knowing their loved one is safe.',
-      image: '/overnight.png',
     },
   ];
 
@@ -136,10 +126,10 @@ export default function AdvancedCarePage() {
             Our advanced care services combine clinical expertise with compassionate support to help seniors with complex conditions remain safely at home with dignity.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
